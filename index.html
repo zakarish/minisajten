@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Minisajt</title>
 </head>
 <body>
-    index.html
+    <div class="header" id="header">
+        <nav>
+            <img src="images/Airbus-Logo.png" class="logo">
+            <ul>
+                <li><a href="#" id="A220">A220</a></li>
+                <li><a href="#" id="A321Neo">A321Neo</a></li>
+                <li><a href="#" id="A330Neo">A330Neo</a></li>
+                <li><a href="#" id="A350">A350</a></li>
+            </ul>
+            <a href="buy.html" class="btn">Buy Now</a>
+       </nav>
+       <div class="info">
+           <div>
+               <h2 id="stat">160 Pax</h2>
+               <p>Capacity</p>
+           </div>
+           <div>
+               <h2 id="stat2">0.82 Ma</h2>
+               <P>Mach Speed</P>
+           </div>
+           <div>
+               <h2 id="stat3">6,297 Km</h2>
+               <P>Max Range</P>
+           </div>
+           <div class="line">
+           </div>
+           <div>
+               <h2 id="model">A220</h2>
+           </div>
+       </div>
+    </div>
+    <script>
+        var header = document.getElementById("header");
+        var A22 = document.getElementById("A220");
+        var A21N = document.getElementById("A321Neo");
+        var A33N = document.getElementById("A330Neo");
+        var A359 = document.getElementById("A350");
+        var model = document.getElementById("model");
+        var stat = document.getElementById("stat");
+        var stat2 = document.getElementById("stat2");
+        var stat3 = document.getElementById("stat3");
+ 
+        A22.onclick = function(){
+            header.style.backgroundImage = "url(images/Swisss.jpg)";
+            model.innerHTML = "A220"
+            stat.innerHTML = "160 Pax"
+            stat2.innerHTML = "0.82 Ma"
+            stat3.innerHTML = "6,297 Km"
+        }
+ 
+        A21N.onclick = function(){
+            header.style.backgroundImage = "url(images/American.jpg)";
+            model.innerHTML = "A321Neo"
+            stat.innerHTML = "244 Pax"
+            stat2.innerHTML = "0.82 Ma"
+            stat3.innerHTML = "7400 Km"
+        }
+ 
+        A33N.onclick = function(){
+            header.style.backgroundImage = "url(images/TAP.jpg)";
+            model.innerHTML = "A330Neo"
+            stat.innerHTML = "440 Pax"
+            stat2.innerHTML = "0.86 Ma"
+            stat3.innerHTML = "13,334 Km"
+        }
+ 
+        A359.onclick = function(){
+            header.style.backgroundImage = "url(images/Lufty.jpg)";
+            model.innerHTML = "A350"
+            stat.innerHTML = "440 Pax"
+            stat2.innerHTML = "0.89 Ma"
+            stat3.innerHTML = "15000 Km"
+        }
+ 
+    </script>
 </body>
 </html>
